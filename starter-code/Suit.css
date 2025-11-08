@@ -1,0 +1,388 @@
+
+*{box-sizing: border-box;
+padding: 0;
+margin: 0;}
+
+
+
+body{font-family: 'Epilogue', sans-serif ;
+display: flex; flex-direction: column;
+align-items: center;
+width: 100% ;
+overflow-x: hidden; }
+
+img{width: 100%;}
+
+ a{text-decoration: none;
+  } 
+
+
+
+/* colors */
+
+/* neutral */
+
+:root{
+--Neutral-900: hsl(219, 42%, 16%);
+--neutral-500: hsl(218, 20%, 36%);
+--neutral-200: hsl(30, 33%, 93%);
+--neutral-0: hsl(30, 29%, 97%);
+
+/* primary colors */
+
+--purple-500: hsl(292, 76%, 54%);
+
+}
+
+
+
+/* header */
+
+/* nav bar */
+nav{display: flex; flex-direction: row;
+     justify-content: space-between;
+    padding-block-start: 1rem;
+padding-block-end: 4rem; 
+ width: 90vw;  
+}
+
+.logo{align-self: center;}
+
+
+/* main content */
+
+/* hero */
+
+
+.curved-line{width: clamp(7rem, 6.3rem + 13vw, 18rem );
+position: absolute; left: 40%; top: -3%;
+}
+
+.title-lite{
+font-size: clamp(2rem, 1.5rem + 3vw,4.5rem);
+margin-block-end: clamp(1.5rem,1rem + 1vw,2.5rem)
+; width:clamp(15rem,14.8rem + 30vw, 42rem);
+z-index: 2;
+}
+
+
+
+.main-des{line-height: 1.6rem;
+margin-block-end:clamp(2.5rem,2rem + 1vw,5rem);
+max-width: 21.9rem;}
+
+.demo{margin-block: 4rem}
+
+
+
+
+.hero-img{position: relative; 
+
+z-index: 1;
+}
+
+.hero{display: flex; flex-direction: column;
+align-items: center;
+width: 90vw;
+position: relative;
+
+}
+
+
+
+.data{margin-block-start: clamp(4rem,2rem + 1vw,5rem);
+  margin-block-end: clamp(20rem,5rem + 70vw,23rem);;
+  display:flex; flex-direction:column
+;gap:clamp(2.5rem,1.5rem + 1vw,5rem);
+align-items:center; 
+text-align: center;
+
+}
+
+
+
+/* testemonials section */
+
+.grid{grid-template-rows: repeat(3, 1fr);
+overflow: visible;
+justify-content: center;
+justify-items: center;
+align-items: center;}
+
+.testimonial {background-color: var(--Neutral-900);
+border-radius: 1rem;
+ position: relative; 
+padding-block-end:1.6rem;
+padding-inline: 1.5rem;
+margin-bottom:-15.625rem
+; max-width: 69.375rem;
+max-height: 46.5rem;
+}
+
+/* testimonail images */
+
+.test-image{position:relative 
+ ; z-index: 2;
+margin-block-start: -12rem; 
+width: clamp(16rem, 15rem + 15vw,22.5rem)
+}
+
+.hue{position:absolute; top:35%; z-index: -1 ;
+right: -25%; 
+}
+
+
+.hue img {
+  mix-blend-mode: soft-light; 
+  opacity: 0.6;              
+  filter: hue-rotate(10deg) saturate(300%);
+  width: clamp(27rem, 26rem + 10vw, 50rem);
+
+ 
+}
+
+
+.line-test{width: 4rem;
+   margin-bottom:18%;
+  margin-right:5%;
+
+ }
+
+/* tetsemonials text */
+
+.test-text{margin-block-start:-28%;
+text-align: center; max-width: 38rem;
+}
+
+.test-title{font-size: clamp(2.375rem,1.5rem + 1vw, 3rem);
+font-weight: 400;
+margin-block-end: 2rem;
+  ;}
+
+.test-body{color: var(--neutral-200);
+line-height: 2rem;
+font-size: 1.25rem;
+opacity: 0.8;
+margin-block-end: 1.5rem;
+}
+
+.test-name{font-weight: 700;
+}
+
+.person-occ{color:var(--neutral-200);
+opacity: 0.8;
+letter-spacing: 2.5px;
+margin-block-start: 0.5rem;}
+
+
+
+ /* footer */
+
+footer{display: flex; flex-direction: column;
+align-items: center;
+justify-content: end;
+min-height: 29rem;
+background-color: var(--neutral-200);
+padding-block-end: 2.5rem;
+width: 100%;
+}
+
+.end-page {display: flex; flex-direction: column;
+gap: 2.25rem; align-items: center; }
+.socials{display: flex; flex-direction: row;
+width: 7rem; gap:1.8rem; 
+; }
+
+
+
+/* utility classes*/
+
+/* containers */
+
+
+.flex{display: flex; flex-direction: column; 
+
+
+}
+
+.grid{display: grid; }
+
+.flex-numbers {display: flex; flex-direction: column ; }
+
+
+
+/* texts */
+
+
+.number-text{color: var(--neutral-500); letter-spacing: 0.156rem;
+font-size: clamp(1rem, 0.5rem + 1vw),2rem}
+
+.number-tag{color: var(--Neutral-900); 
+font-size: 3rem;}
+
+.text-white{color: white}
+
+.text-muted {color: var(--neutral-500);}
+
+
+/* btns */
+
+
+
+.btn {
+  max-width: 13.187rem;
+  background-color: white;
+  border: solid 1.5px var(--Neutral-900);
+  border-radius: 0.4rem;
+padding-inline: 0.9rem;
+padding-block: 0.9rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--Neutral-900);
+ 
+}
+
+.btn-demo {
+  background-color: var(--Neutral-900);
+  color: white;
+  border: none;
+  position: relative;
+  z-index: 0;
+}
+
+
+/* for the hover effect on the demo button */
+
+.btn-demo::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98.3%;
+  height: 100%;
+  border-radius: 0.4rem;
+  z-index: -1;
+background:
+ linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+opacity: 0
+; transition: ease-in-out 0.4s;
+overflow:hidden;}
+
+/* media tablet */
+
+@media(min-width:35rem){
+
+  /* containers */
+
+.flex{flex-direction: row; width: 100%;
+justify-content: space-between; gap: 2rem;}
+.data{flex-direction: row;
+justify-content: center; width:16rem ; gap: 4rem; 
+
+}
+
+/* nav bar */
+
+.nav-bar{max-width: 44rem;}
+
+
+/* hero section */
+
+.hero{max-width: 44rem;}
+
+
+/* hero texts */
+
+.title-lite{position:absolute; top: 7%;};
+.hero-text{margin-block-start: 10rem;
+align-self: center;}
+
+
+/* hero images */
+
+.hero-img{max-height: 37rem;
+width:clamp(17.5rem,16.5rem + 6vw, 22rem)};
+
+.curved-line{
+position: absolute; left: 55%; top: -60%;}
+
+
+/* testimonial section */
+
+.testimonial{max-width: 70rem;
+bottom: -6rem};
+
+.test-image{
+margin-block-start: -15rem; 
+}
+
+/* footer */
+.end-page { flex-direction: row;
+ justify-content: space-around; width: 100%;
+
+ }
+ }
+
+
+ /* desktop */
+
+ @media(min-width:60rem){
+
+
+/* nav bar */
+
+.nav-bar{max-width: 70rem;}
+
+/* hero section */
+
+
+.hero{flex-direction: row; 
+justify-content: space-between;
+ max-width: 70rem;
+;
+}
+
+/* hero data */
+.data{flex-direction: column; ;
+max-width: 12rem;
+margin-inline-end: clamp(0.5rem, 0.4rem + 3vw, 4rem);}
+
+/* hero images */
+  .hero-img{position: absolute;
+  top: 0%; left: 40%;}
+.curved-line{left: 42%; top: -50%;}
+
+/* hero texts */
+.hero-text{margin-top:-1rem}
+.title-lite{ top: 10%;};
+
+/* testimonial */
+.grid{grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(1,1fr); gap: 1rem;}
+
+.test-text{margin-block-start:unset;
+width:22rem ;}
+
+.testimonial{padding-block: 5.5rem;
+padding-inline: 7.8rem;
+bottom: unset;}
+
+.test-image{top:13%}
+
+
+.test-text{ max-width: 22rem;
+}
+
+
+
+/* hover effects on buttons */
+.btn{ transition: ease-in-out 0.4s}
+.btn-primary:hover{background-color: var(--Neutral-900); 
+  ; color:white;}
+.btn-demo:hover::before{opacity: 1;
+}
+
+ }
+
+
