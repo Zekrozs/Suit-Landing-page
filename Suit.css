@@ -136,7 +136,7 @@ right: -25%;
   mix-blend-mode: soft-light; 
   opacity: 0.6;              
   filter: hue-rotate(10deg) saturate(300%);
-  width: clamp(27rem, 26rem + 10vw, 50rem);
+  width: clamp(27rem, 26rem + 12vw, 33rem);
 
  
 }
@@ -369,6 +369,7 @@ padding-inline: 7.8rem;
 bottom: unset;}
 
 .test-image{top:13%}
+
 
 
 .test-text{ max-width: 22rem;
